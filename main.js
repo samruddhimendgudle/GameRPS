@@ -6,20 +6,17 @@ function computerChoice() {
 
 function checkWinner(user, computer) {
 
-    if (user === computer) {
-        return "Match Draw!";
+    if(user==computer){
+        return "It's a tie!";
+    }
+    if((user=="rock" && computer=="scissor") ||
+       (user=="paper" && computer=="rock") ||
+       (user=="scissor" && computer=="paper")){
+        return "You win!";
+    }else{
+        return "Computer wins!";
     }
 
-    if (
-        (user === "rock" && computer === "scissor") ||
-        (user === "paper" && computer === "rock") ||
-        (user === "scissor" && computer === "paper")
-    ) {
-        return "You Win!";
-    } 
-    else {
-        return "Computer Wins!";
-    }
 }
 
 function playGame(userChoice) {
