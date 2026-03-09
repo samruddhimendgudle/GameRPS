@@ -45,3 +45,10 @@ for (let ch of str3) {
 }
 
 console.log(rev);
+
+
+
+function print(str){
+    return str.toUpperCase();
+}
+print("hello")
