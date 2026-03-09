@@ -7,7 +7,7 @@ function computerChoice() {
 function checkWinner(user, computer) {
 
     if(user==computer){
-        return "It's a tie!";
+        return "Draw";
     }
     if((user=="rock" && computer=="scissor") ||
        (user=="paper" && computer=="rock") ||
@@ -26,7 +26,7 @@ function playGame(userChoice) {
     let result = checkWinner(userChoice, computer);
 
     document.getElementById("result").innerHTML =
-        "You: " + userChoice +
-        "<br>Computer: " + computer +
-        "<br>" + result;
+        "User Choice Is: " + userChoice +
+        "<br> Computer Choice IS:"+computer+
+        "<br>"+result;
 }
