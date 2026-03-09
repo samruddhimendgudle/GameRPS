@@ -12,4 +12,5 @@ console.log(str.indexOf("o")); //4
 console.log(str.slice(0,-1));    //substring is similar to slice but it doesnt accept negative index
 console.log(str.substring(0,5)); //hello //substring is similar to slice but it doesnt accept negative index
 console.log(str.replace("world","javascript")); //hello javascript  
- 
+ console.log(str.trim()); //hello world  //removes whitespace from both ends of the string
+ console.log(str.split(" ")); //["hello","world"] //splits the string into an array of substrings based on the separator
