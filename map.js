@@ -26,14 +26,29 @@
 // console.log(marks)
 // console.log(modified);
 
-// let nums=[1,2,3,4,5,6,7,8,9,10];
-// const n1=nums.filter((e1)=>{
-//     return e1%2==0
-// })
-// console.log(n1);
 
-let nums=[22,21,56,76,43,1,9];
-const n1=nums.filter((e1)=>{
-    return e1%2!=0
+// const items=[{price:10,quantity:2},{price:20,quantity:3},{price:15,quantity:4}];
+// const total=items.map((e1)=>{
+//     return e1.price*e1.quantity
+// })
+// console.log(total);
+
+// const items=[{price:10,quantity:2},{price:5,quantity:5},{price:8,quantity:3}];
+// const total=items.map((e1)=>{
+//     return e1.price*e1.quantity
+// })
+// console.log(total);
+
+
+const stu=[{name:"John",marks:35},{name:"Alice",marks:50},{name:"Bob",marks:40}];
+const stu1=stu.filter((e1)=>{
+    return e1.marks>=40
 })
-console.log(n1);
+console.log(stu1)
+
+//how work
+let home=["hello","world","javascript"]
+const newa=home.map((e1)=>{
+    return e1[0].toUpperCase()+e1.substring(1,e1.length);
+})
+console.log(newa)
