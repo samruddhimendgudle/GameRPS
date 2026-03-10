@@ -26,8 +26,14 @@
 // console.log(marks)
 // console.log(modified);
 
-let nums=[1,2,3,4,5,6,7,8,9,10];
+// let nums=[1,2,3,4,5,6,7,8,9,10];
+// const n1=nums.filter((e1)=>{
+//     return e1%2==0
+// })
+// console.log(n1);
+
+let nums=[22,21,56,76,43,1,9];
 const n1=nums.filter((e1)=>{
-    return e1%2==0
+    return e1%2!=0
 })
 console.log(n1);
