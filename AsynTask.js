@@ -15,4 +15,4 @@ promise.then((data)=>data.json())
     console.log(actualdata)
 }).catch((error)=>{
     console.log(error)
-})
+})   
